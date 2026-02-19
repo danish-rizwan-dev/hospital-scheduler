@@ -1,16 +1,37 @@
-# React + Vite
+# 🏥 Hospital Appointment Scheduler
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, professional healthcare management dashboard built with **React** and **Tailwind CSS**. This application streamlines medical staff registration and patient scheduling with real-time capacity tracking.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo Features
 
-## React Compiler
+* **Doctor Directory**: Add medical professionals with specific IDs and specialties.
+* **Dynamic Load Tracking**: Visual progress bars show real-time doctor availability.
+* **Smart Booking**: Automated department-based booking and manual patient assignment.
+* **Prevent Overbooking**: Intuitive UI that disables booking once a doctor hits their daily limit.
+* **Responsive Design**: A clean, "SaaS-style" interface that works on mobile, tablet, and desktop.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: [React.js](https://reactjs.org/) (Functional Components & Hooks)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (Utility-first CSS)
+- **Icons**: Emojis & Custom Tailwind UI Elements
+- **State Management**: React `useState` and `useEffect`
+- **Build Tool**: Vite / Create React App
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+│   ├── AddDoctor.jsx        # Form to register new medical staff
+│   ├── DoctorList.jsx       # Dashboard displaying doctor status cards
+│   └── BookAppointment.jsx  # Department-based quick booking panel
+├── App.jsx                  # Main logic and state management
+├── index.css                # Tailwind directives and custom component layers
+└── main.jsx                 # Application entry point
