@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global page styling */
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+/* Input fields */
+.input {
+  @apply w-full p-2 border border-gray-300 rounded
+         focus:outline-none focus:ring-2 focus:ring-black;
+}
+
+/* Primary buttons */
+.btn {
+  @apply bg-black text-white px-4 py-2 rounded
+         hover:bg-gray-800 transition;
+}
+
+/* Table styling */
+table {
+  @apply border-collapse;
+}
+
+th, td {
+  @apply p-2 border;
+}
+
+th {
+  @apply bg-gray-200 font-semibold;
+}
